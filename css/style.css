@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+html {font-size:62.5%; /* =10px */ font-family:'Roboto', sans-serif; scroll-behavior:smooth;}
+
+body{font-size:1.4rem; color:#222;}
+
+body a{text-decoration:none;}
+
+.back-to-top{position:fixed; bottom:8rem; right:1rem; display:flex; justify-content:center; align-items:center; width:5rem; height:5rem; background:#000; border-radius:50%; z-index:99999;}
+
+ul{list-style:none; padding:0; margin:0;}
+
+.container-row{display:flex; margin:auto; width:100%; max-width:150rem;}
+#main .cont-section{max-width:150rem; margin:auto;}
+
+#header{background:#f11854; padding:1rem;}
+#header .top-header .container-row, 
+#header .bottom-header .container-row{align-items:center;}
+#header .top-header{padding:2rem 1.5rem 3rem;}
+#header .top-header .logo{width:20%;}
+#header .top-header .search{width:50%;}
+#header .top-header .search form{display:block; margin:auto; max-width:55rem;}
+#header .top-header .search form input{border:none; border-top-left-radius:5px; border-bottom-left-radius:5px; z-index:0; height:4rem; padding-left:2rem; width:100%; max-width:45rem; background:#fff; color:#666;}
+#header .top-header .search form button{position:relative; background:url("../images/icon-search.png") no-repeat  #222 center center/2rem; top:-0.4rem; right:0.3rem; height:40px; text-align:center; line-height:0; padding:0 30px; font-size:0; color:#fff; border-radius:0;  border-bottom-right-radius:5px; border-top-right-radius:5px; border:0; cursor:pointer;}
+#header .top-header .contact-cart{width:30%;}
+#header .top-header .contact-cart ul{display:flex; gap:1rem;}
+#header .top-header .contact-cart ul li{display:flex; align-items:center; font-weight:500;}
+#header .top-header .contact-cart ul li span{color:#fff; font-size:1.5rem; font-weight:700; margin-top:.7rem;}
+#header .top-header .contact-cart ul li.cart{position:relative;}
+#header .top-header .contact-cart ul li.cart span.cart-count{position:absolute; width:1.8rem; height:1.8rem; line-height:1.9rem; text-align:center; bottom:-0.7rem; left:0rem; font-size:1.2rem; color:#fff; border:0.2rem solid #fff; background-color:#ff9800; border-radius:100%;}
+#header .bottom-header{border-top:.1rem solid #fff; padding:2rem 0 1rem;}
+#header .bottom-header .menu ul{display:flex; gap:0 2rem;}
+#header .bottom-header .menu ul li a{font-size:1.4rem; font-weight:700; color:#000; text-decoration:none; text-transform:uppercase; }
+#header .bottom-header .menu ul li a.active{font-weight:900; color:#fff;}
+
+
+#main .section1{padding:5rem 1rem;}
+#main .section1 .container-banner{position:relative;}
+#main .section1 .container-banner .slick-arrow,
+#main .section1 .container-banner .slick-dots{position:absolute; z-index:9; cursor:pointer;}
+#main .section1 .container-banner .slick-arrow{top:0; bottom:0; margin:auto; height:5rem; width:5rem; border-radius:50%; border:0; font-size:0; opacity:0; transition:all .5s;}
+#main .section1 .container-banner:hover .slick-arrow{opacity:1;}
+#main .section1 .container-banner .slick-prev{left:1rem; background:url("../images/Back.png") #00000026 no-repeat center center/1.2rem;}
+#main .section1 .container-banner .slick-next{right:1rem; background:url("../images/next.png") #00000026  no-repeat center center/1.2rem;}
+#main .section1 .container-banner .slick-dots{bottom:1.5rem; left:0; right:0; margin:auto; display:flex; justify-content:center; gap:1rem;}
+#main .section1 .container-banner .slick-dots li button{border-radius:5rem; border:0.1rem solid #000; font-size:0; width:2rem; height:2rem; background:#686868a6; cursor:pointer;}
+#main .section1 .container-banner .slick-dots li.slick-active button{background:#f11854;}
+#main .section1 .container-banner .item.slick-slide img{width:100%;}
+
+#main .section2{display:flex; flex-wrap:wrap;}
+#main .section2>*{width:100%;}
+#main .section2 .top{display:flex; width:100%; margin:30px 0; padding:22px 15px 15px 15px; border:1px solid #e5e5e5; border-radius:3px;}
+#main .section2 .top .col{width:calc(100%/5); display:flex; justify-content:center; gap:2rem; align-items:center;}
+#main .section2 .top .col img{max-width:5rem; height:max-content;}
+#main .section2 .top .col p{display:block; font-weight:500; font-size:16px; text-transform:capitalize;}
+#main .section2 .top .col p span{display:block; margin-top:1rem; font-weight:300; text-transform:capitalize;}
+#main .section2 .bottom{display:flex; justify-content:space-around; width:100%; margin:30px 0; padding:22px 15px 15px 15px; border-radius:3px;}
+#main .section2 .bottom a img{width:130px; margin:0 auto; margin-bottom:15px; border:2px solid #e5e5e5; border-radius:100%; transition:all .2s;}
+#main .section2 .bottom a img:hover{border:5px double #e5e5e5; transform:scale(1.1);}
+#main .section2 .bottom a p{margin:0; color:#282828; font-size:18px; font-weight:500; text-align:center; text-transform:capitalize;}
+
+#main .section4{display:flex; justify-content:center; align-items:center; gap:2.5rem; padding:5rem 1rem;}
+#main .section4 .col img{width:100%;}
+#main .section4 .col2{width:49%;}
+#main .section4 .col1, 
+#main .section4 .col3{display:flex; flex-direction:column; gap:2rem; width:24%;}
+
+#main .section5 .row{display:flex;}
+#main .section5 > .row{padding:2rem 0;}
+#main .section5 .row .col-banner{width:17%;}
+#main .section5 .row .col-banner img{width:100%;}
+#main .section5 .row .col-products{width:83%;}
+#main .section5 .row .col-products .col{width:20%; border:1px solid #00000040; padding:1rem;}
+#main .section5 .row-dog .col-products .col, 
+#main .section5 .row-fish .col-products .col{border-left:0;}
+#main .section5 .row-dog .col-products .col:last-child, 
+#main .section5 .row-fish .col-products .col:last-child{border-top-right-radius:.5rem; border-bottom-right-radius:.5rem;}
+#main .section5 .row-cat .col-products .col{border-right:0;}
+#main .section5 .row-cat .col-products .col:first-child{border-top-left-radius:.5rem; border-bottom-left-radius:.5rem;}
+#main .section5 .row .col-products .title{padding:0 2rem 0 2rem; color:#ff9800; font-size:1.6rem; font-weight:500; text-transform:capitalize;}
+#main .section5 .row-dog .col-products .title, 
+#main .section5 .row-fish .col-products .title{text-align:end;}
+#main .section5 .row .col-products .col img{display:block; max-width:21rem; margin:auto;}
+#main .section5 .row .col-products .col .description{text-align:center;}
+#main .section5 .row .col-products .col .description h4{margin:0 0 1rem 0;}
+#main .section5 .row .col-products .col .description .price{margin:0 0 1rem 0; line-height:2.6rem; min-height:2.8rem; color:#f44; font-size:1.6rem; font-weight:700; text-align:center;}
+#main .section5 .row .col-products .col .description .icon{display:flex; justify-content:center; gap:1rem;}
+#main .section5 .row .col-products .col .description .icon a{background:#f2f2f2; padding:0.7rem; border-radius:50%;}
+#main .section5 .row .col-products .col .description .icon img{max-width:2rem; margin:0;}
+#main .section6{display:flex; flex-wrap:nowrap; justify-content:center; gap:2rem; padding:5rem 1rem;}
+#main .section6 .col{width:50%;}
+#main .section6 .col img{width:100%;}
+
+
+/* <---------------- Pagina contactanos y tanaja con nosotros----------------> */
+
+#main.contacto .section1, 
+#main.trabaja .section1{padding:0;}
+#main.contacto .section1 img, 
+#main.trabaja .section1 img{width:100%;}
+
+#main.contacto .section2, 
+#main.trabaja .section2{padding:5rem 1rem;}
+#main.contacto .section2 > h2, 
+#main.trabaja  .section2 > h2{margin:1rem 0 3rem; font-size:3rem; font-weight:700; text-align:center; text-transform:uppercase;}
+#main.contacto .section2 form, 
+#main.trabaja .section2 form{display:flex; justify-content:center; flex-wrap:wrap; gap:2rem; max-width:90rem; margin:auto;}
+#main.contacto .section2 form > div, 
+#main.trabaja .section2 form > div{width:47%;}
+#main.contacto .section2 form > div:nth-child(5){width:96%;}
+#main.trabaja .section2 form > div:nth-child(5), 
+#main.trabaja .section2 form > div:nth-child(6){width:96%;}
+#main.contacto .section2 form > div >*, 
+#main.trabaja .section2 form > div >*{display:block;}
+#main.contacto .section2 form > div > labeL, 
+#main.trabaja .section2 form > div > labeL{margin-bottom:.5rem; font-weight:700;}
+#main.contacto .section2 form > div > input, 
+#main.trabaja .section2 form > div > input{min-height:2rem; padding:0.5rem 1rem; width:94%;}
+#main.contacto .section2 form > div > textarea, 
+#main.trabaja .section2 form > div > textarea{padding:0.5rem 1rem; width:97.5%;}
+#main.contacto .section2 form > button,
+#main.trabaja .section2 form > button{padding:1rem 5rem; background:#000; color:#fff; border:none; border-radius:.5rem; transition:all .2s;}
+#main.contacto .section2 form > button, 
+#main.trabaja .section2 form > button:hover{background:#f11854;}
+#main.trabaja .section2 form > div > labeL.upload{position:relative; width:96%; padding:3rem 1.5rem; background:#fff; border-radius:.7rem; border:.3rem dashed #eee; text-align:center; transition:all .2s ease; user-select:none;}
+#main.trabaja .section2 form > div > labeL.upload img{display:block; margin:2rem auto;}
+#main.trabaja .section2 form > div > labeL.upload input{width:100%; height:100%; position:absolute; top:0; left:0; opacity:0; font-size:0;}
+
+/* <---------------- Productos ----------------> */
+
+#main.productos .section1{padding:0;}
+#main.productos .section1 img{width:100%;}
+
+#main.productos  .section2{padding:5rem 1rem;}
+#main.productos .section2 .container-products{display:flex; flex-wrap:wrap; justify-content:center; gap:2rem 4rem;} 
+#main.productos .section2 .container-products .product{width:30%; max-width:35rem; border:0.1rem solid #0000002e; border-radius: 1.5rem; padding:2rem 1rem; background:url("../images/huellas.png") no-repeat  0 0/10rem;}
+#main.productos .section2 .container-products .product img{display:block; max-width:21rem; margin:auto; border-radius:4rem;}
+#main.productos .section2 .container-products .product .description{text-align:center;}
+#main.productos .section2 .container-products .product .description h4{margin:0 0 1rem 0;}
+#main.productos .section2 .container-products .product .description .price{margin:0 0 1rem 0; line-height:2.6rem; min-height:2.8rem; color:#f44; font-size:1.6rem; font-weight:700; text-align:center;}
+#main.productos .section2 .container-products .product .description .icon{display:flex; justify-content:center; gap:1rem;}
+#main.productos .section2 .container-products .product .description .icon a{background:#f2f2f2; padding:0.7rem; border-radius:50%;}
+#main.productos .section2 .container-products .product .description .icon img{max-width:2rem; margin:0;}
+
+/* <---------------- Servicios ----------------> */
+
+#main.servicios .section1{padding:0;}
+#main.servicios .section1 img{width:100%;}
+
+#main.servicios  .section2{padding:5rem 1rem;}
+#main.servicios  .section2 > h2{margin:1rem 0 3rem; font-size:3rem; font-weight:700; text-align:center; text-transform:uppercase;}
+#main.servicios  .section2 .container-servicios{display:flex; justify-content:space-between;}
+#main.servicios  .section2 .container-servicios a img{margin: auto; display: block; max-width:30rem;}
+#main.servicios  .section2 .container-servicios a h4{font-size:2.5rem; color:#222   º; text-align:center;}
+
+#footer .footer-top{background:#f5f6f8; padding:2rem 1rem;}
+#footer .footer-top .container-row{gap:10rem; padding:1rem 0;}
+#footer .footer-top .container-row ul li{padding:1rem 0;}
+#footer .footer-top .container-row .footer3 form.suscribete input{border:none; border-top-left-radius:5px; border-bottom-left-radius:.5rem; z-index:0; height:4rem; padding-left:2rem; width:60%; background:#fff; color:#666;}
+#footer .footer-top .container-row .footer3 form.suscribete button{ position:relative; background:#f11854; top:-0.1rem; right:0.3rem; height:43px; text-align:center; line-height:0; padding:0 10px; width:30%; color:#fff; border-radius:0; border-bottom-right-radius:5px; border-top-right-radius:5px; border:0; font-weight:700;}
+#footer .footer-bottom{background:#f11854;}
+#footer .footer-bottom .container-row{justify-content:space-between; align-items:center; padding:1rem 0;}
+#footer .footer-bottom .container-row .copyright-w{color:#fff;}
+
