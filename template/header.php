@@ -45,10 +45,10 @@
             <div class="container-row">
                 <nav class="menu">
                     <ul>
-                        <li class="home"><a href="index.html" >Inicio</a></li>
-                        <li class="productos"><a href="producto.html">Productos</a></li>
-                        <li class="servicios"><a href="servicio.html">Servicios</a></li>
-                        <li class="contacto"><a href="contactanos.html">Contactanos</a></li>
+                        <li class="home"><a href="index.php" >Inicio</a></li>
+                        <li class="productos"><a href="producto.php">Productos</a></li>
+                        <li class="servicios"><a href="servicio.php">Servicios</a></li>
+                        <li class="contacto"><a href="contactanos.php">Contactanos</a></li>
                     </ul>
                 </nav>
             </div>
