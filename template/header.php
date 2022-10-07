@@ -38,7 +38,7 @@
                             <span class="cart-count">0</span>
                         </li>
                         <li class="account">
-                            <a href="inicio.php"><img src="images/icon-account.png" alt=""></a>;
+                            <a href="login.php"><img src="images/icon-account.png" alt=""></a>;
                             <div>Login</div>
                         </li>
                     </ul>
